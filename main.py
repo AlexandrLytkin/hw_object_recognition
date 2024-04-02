@@ -26,6 +26,7 @@ while True:
             roi_color2 = cv2.GaussianBlur(roi_color2, (51, 51), 51)
             roi_color[ey:ey + eh, 0:roi_color.shape[0]] = roi_color2
 
+    img = img[::, ::-1]
     cv2.imshow('img', img)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
