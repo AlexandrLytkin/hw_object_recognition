@@ -32,4 +32,4 @@ while True:
         break
 
 webcam.release()
-cv2.imwrite('sсreen_1.jpg', img)  # сохраняю закрытием окна
+cv2.imwrite('sсreen.jpg', img)  # сохраняю закрытием окна
